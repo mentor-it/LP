@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TwójMentor.IT — Znajdź swojego Mentora w IT</title>
+  <meta name="description" content="Wybieraj spośród dziesiątek mentorów IT i rozpocznij swoją przygodę z IT już dziś. Indywidualne sesje 1:1 z doświadczonymi specjalistami: Python, JavaScript, React, Java i więcej." />
+  <meta name="theme-color" content="#5b34d6" />
+  <link rel="canonical" href="https://mentor-it.github.io/LP/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="TwójMentor.IT" />
+  <meta property="og:title" content="TwójMentor.IT — Znajdź swojego Mentora w IT" />
+  <meta property="og:description" content="Wybieraj spośród dziesiątek mentorów IT i rozpocznij swoją przygodę z IT już dziś." />
+  <meta property="og:url" content="https://mentor-it.github.io/LP/" />
+  <meta property="og:image" content="https://mentor-it.github.io/LP/assets/img/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TwójMentor.IT — Znajdź swojego Mentora w IT" />
+  <meta name="twitter:description" content="Wybieraj spośród dziesiątek mentorów IT i rozpocznij swoją przygodę z IT już dziś." />
+  <meta name="twitter:image" content="https://mentor-it.github.io/LP/assets/img/og-image.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/img/hero-mentorzy.webp" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JSON-LD: Organizacja + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TwójMentor.IT",
+    "url": "https://mentor-it.github.io/LP/",
+    "logo": "https://mentor-it.github.io/LP/assets/img/favicon.svg",
+    "description": "Platforma łącząca mentorów IT z uczniami. Indywidualne sesje 1:1 z doświadczonymi specjalistami.",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kto może zostać uczniem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Uczniem TwójMentor.IT może zostać każdy, kto chce rozwijać się w branży IT — niezależnie od poziomu zaawansowania. Niezależnie od tego, czy dopiero zaczynasz, czy chcesz pogłębić konkretną technologię, znajdziesz mentora dopasowanego do swoich potrzeb." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak umówić sesję z mentorem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Wystarczy wybrać mentora, kliknąć „Umów sesję”, wskazać dogodny termin w naszym systemie rezerwacji i potwierdzić spotkanie. Całość zajmuje kilka minut." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy TwójMentor.it jest darmowy?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Założenie konta i przeglądanie mentorów jest bezpłatne. Pierwsza sesja u wielu mentorów jest darmowa, a kolejne sesje rozliczane są w punktach według stawki ustalonej przez mentora." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy TwójMentor.it pośredniczy w rozliczeniach między uczniem a mentorem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tak. Wszystkie płatności, rezerwacje i rozliczenia odbywają się bezpiecznie w ramach platformy — bez konieczności korzystania z zewnętrznych aplikacji." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="TwójMentor.IT — strona główna">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="url(#lgrad)"/>
+          <path d="M11 22V13.5c0-.6.6-1 1.1-.8l4.4 1.8 4.4-1.8c.5-.2 1.1.2 1.1.8V22" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="11" r="2.4" fill="#fff"/>
+          <defs><linearGradient id="lgrad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#1a2b4a"/><stop offset="1" stop-color="#2a4d8f"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text"><span class="logo-dark">Twój</span><span class="logo-blue">Mentor</span><span class="logo-dark">.IT</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a href="#cta" class="btn btn-ghost">Chcę zostać mentorem</a>
+        <a href="#cta" class="btn btn-primary">Zaloguj się</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">Znajdź swojego<br>Mentora w IT</h1>
+          <p class="hero-sub">Wybieraj spośród dziesiątek mentorów i rozpocznij swoją przygodę z IT już dziś!</p>
+
+          <form class="hero-search" role="search" aria-label="Wyszukaj technologię">
+            <label class="visually-hidden" for="heroSearch">Czego chcesz się nauczyć</label>
+            <span class="search-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="m17 17-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <input id="heroSearch" type="text" placeholder="Czego chcesz się nauczyć" autocomplete="off" />
+            <button type="submit" class="btn btn-primary search-btn">Wyszukaj</button>
+          </form>
+        </div>
+
+        <div class="hero-visual" aria-hidden="false">
+          <div class="hero-photo-wrap">
+            <img src="assets/img/hero-mentorzy.webp" width="617" height="432" alt="Zespół mentorów IT z technologiami Python, JavaScript i narzędziami projektowymi" class="hero-photo" />
+            <span class="badge-star" aria-hidden="true">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="24" r="18" fill="#5b34d6"/><path d="M28 14l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L28 29.3l-5.8 3.1 1.1-6.5L18.6 21l6.5-.9L28 14z" fill="#fff"/><path d="M22 39l6 4 6-4v8l-6-3-6 3z" fill="#5b34d6"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasek technologii -->
+      <div class="tech-strip-wrap">
+        <div class="tech-strip" id="techStrip" aria-label="Dostępne technologie">
+          <button class="tech-chip" data-tech="ML"><span>ML</span></button>
+          <button class="tech-chip" data-tech="JavaScript"><span>JavaScript</span></button>
+          <button class="tech-chip" data-tech="React"><span>React</span></button>
+          <button class="tech-chip" data-tech="Angular"><span>Angular</span></button>
+          <button class="tech-chip" data-tech="Vue"><span>Vue</span></button>
+          <button class="tech-chip" data-tech="TypeScript"><span>TypeScript</span></button>
+          <button class="tech-chip" data-tech="PHP"><span>PHP</span></button>
+          <button class="tech-chip" data-tech="Ruby"><span>Ruby</span></button>
+          <button class="tech-chip" data-tech="Python"><span>Python</span></button>
+          <button class="tech-chip" data-tech="Django"><span>Django</span></button>
+          <button class="tech-chip" data-tech="Flask"><span>Flask</span></button>
+          <button class="tech-chip" data-tech="Java"><span>Java</span></button>
+          <button class="tech-chip" data-tech=".NET"><span>.NET</span></button>
+          <button class="tech-chip" data-tech="Scala"><span>Scala</span></button>
+          <button class="tech-chip" data-tech="C"><span>C</span></button>
+          <button class="tech-chip" data-tech="C++"><span>C++</span></button>
+          <button class="tech-chip" data-tech="C#"><span>C#</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= ŁĄCZYMY MENTORÓW I UCZNIÓW ======= -->
+    <section class="section connect" id="o-nas" aria-labelledby="connect-title">
+      <div class="container connect-grid">
+        <div class="connect-visual reveal">
+          <img src="assets/img/laczymy.webp" width="560" height="504" loading="lazy" alt="Mentor i uczennica wspólnie pracujący przy laptopie" class="connect-photo" />
+        </div>
+        <div class="connect-copy reveal">
+          <h2 id="connect-title" class="section-title">Łączymy mentorów<br>i uczniów</h2>
+          <p>Tworzymy miejsce, w którym Mentorzy i Uczniowie mogą wzajemnie się inspirować, uczyć i rozwijać. Naszą siłą napędową jest przekonanie, że każdy ma coś wartościowego do przekazania i każdy może się czegoś nauczyć.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CZYM JEST MENTORING ======= -->
+    <section class="section mentoring" id="czym-jest-mentoring" aria-labelledby="mentoring-title">
+      <div class="container">
+        <h2 id="mentoring-title" class="section-title center">Czym jest mentoring?</h2>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0M3 20v-1a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v1" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="7" r="3.2" stroke="#fff" stroke-width="1.8"/></svg>
+            </span>
+            <h3>Relacja</h3>
+            <p>To relacja oparta na uczeniu się, polegająca na dzieleniu się umiejętnościami, wiedzą i doświadczeniem pomiędzy Mentorem a mentee (uczniem) poprzez rozmowy rozwojowe, omawianie doświadczeń i modelowanie ról.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 4h11l3 3v13H5z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9h6M9 13h6M9 17h4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Samodzielna praca</h3>
+            <p>Mentoring to głównie indywidualna praca ucznia. Od jego nastawienia zależą finalne rezultaty nauki. Pomiędzy spotkaniami z Mentorem uczeń wykonuje samodzielną pracę, wyznaczoną na spotkaniu przez Mentora.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="#fff" stroke-width="1.8"/><path d="M5 20a7 7 0 0 1 14 0" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Indywidualne podejście</h3>
+            <p>Mentoring to nie szkolenie czy kurs! Do każdego ucznia Mentor podchodzi indywidualnie, w zależności jakiego wsparcia uczeń potrzebuje w konkretnym momencie.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 8 8" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12v5M4 12h5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Proces</h3>
+            <p>Mentoring jest procesem. Jedno czy dwa spotkania dadzą znikome efekty. Wdrożenie ucznia w dany temat wymaga pracy, czasu i systematyczności.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= JAK TO DZIAŁA ======= -->
+    <section class="section how" id="jak-to-dziala" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title">Jak to działa?</h2>
+        <div class="how-steps">
+          <div class="how-row reveal">
+            <div class="how-text">
+              <span class="step-num">#1</span>
+              <h3>Wyszukaj</h3>
+              <p>Wyszukaj odpowiedniego dla siebie mentora, zgodnie z Twoimi potrzebami (technologia, cena, oceny).</p>
+            </div>
+            <div class="how-media">
+              <img src="assets/img/krok1-wyszukaj.webp" width="600" height="434" loading="lazy" alt="Ekran wyszukiwania mentora z filtrami technologii w aplikacji TwójMentor.IT" />
+            </div>
+          </div>
+          <div class="how-row reverse reveal">
+            <div class="how-text">
+              <span class="step-num">#2</span>
+              <h3>Umów się</h3>
+              <p>Umów się na pierwsze sesje za pomocą naszego systemu rezerwacji.</p>
+            </div>
+            <div class="how-media">
+              <img src="assets/img/krok2-umow.webp" width="600" height="435" loading="lazy" alt="Okno rezerwacji sesji z wyborem daty i godziny w aplikacji TwójMentor.IT" />
+            </div>
+          </div>
+          <div class="how-row reveal">
+            <div class="how-text">
+              <span class="step-num">#3</span>
+              <h3>Zdobywaj wiedzę</h3>
+              <p>Czatuj i umawiaj się na kolejne sesje online z mentorami, by poszerzać swoje kwalifikacje.</p>
+            </div>
+            <div class="how-media">
+              <img src="assets/img/krok3-wiedza.webp" width="600" height="434" loading="lazy" alt="Wideorozmowa mentora z uczniem podczas sesji online" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= NASI MENTORZY ======= -->
+    <section class="section mentors" id="mentorzy" aria-labelledby="mentors-title">
+      <div class="container">
+        <div class="mentors-head">
+          <h2 id="mentors-title" class="section-title">Nasi mentorzy</h2>
+          <div class="slider-nav">
+            <button class="slider-btn" id="prevMentor" aria-label="Poprzedni mentor">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Poprzedni</span>
+            </button>
+            <button class="slider-btn" id="nextMentor" aria-label="Następny mentor">
+              <span>Następny</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mentors-track-wrap">
+          <div class="mentors-track" id="mentorsTrack">
+            <!-- Michał -->
+            <article class="mentor-card">
+              <button class="fav-btn" aria-label="Dodaj do ulubionych">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.5-9.3-9C1.2 8 2.5 4.5 6 4.5c2 0 3.2 1.3 4 2.4.8-1.1 2-2.4 4-2.4 3.5 0 4.8 3.5 3.3 6.5C19 15.5 12 20 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mentor-top">
+                <img src="assets/img/avatar-michal.webp" width="64" height="64" loading="lazy" alt="Michał — Frontend Developer i UX Researcher" class="mentor-avatar" />
+                <div>
+                  <h3 class="mentor-name">Michał</h3>
+                  <p class="mentor-role">Frontend Developer<br>UX Researcher</p>
+                  <p class="mentor-rate"><span class="stars">★</span> 5.0 <span class="reviews">(22)</span></p>
+                </div>
+              </div>
+              <ul class="mentor-tags">
+                <li class="tag tag-js">JavaScript</li>
+                <li class="tag tag-html">HTML</li>
+                <li class="tag">Frontend</li>
+                <li class="tag">Angular</li>
+                <li class="tag tag-more">+4</li>
+              </ul>
+              <p class="mentor-bio">Cześć! Jestem doświadczonym mentorem IT z bogatym doświadczeniem w programowaniu i rozwoju oprogramowania. Specjalizuję się w językach takich jak Python, Java i JavaScript. Moja misja to nie tylko przek…</p>
+              <div class="mentor-footer">
+                <div class="mentor-price"><strong>100 Ptk</strong> /sesja</div>
+                <p class="mentor-free"><span aria-hidden="true">🎁</span> Pierwsza sesja darmowa</p>
+              </div>
+              <p class="mentor-term">Najbliższy termin: <strong>Wtorek, 25.10</strong></p>
+            </article>
+
+            <!-- Anna -->
+            <article class="mentor-card">
+              <button class="fav-btn" aria-label="Dodaj do ulubionych">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.5-9.3-9C1.2 8 2.5 4.5 6 4.5c2 0 3.2 1.3 4 2.4.8-1.1 2-2.4 4-2.4 3.5 0 4.8 3.5 3.3 6.5C19 15.5 12 20 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mentor-top">
+                <img src="assets/img/avatar-anna.webp" width="64" height="64" loading="lazy" alt="Anna — Frontend Developer" class="mentor-avatar" />
+                <div>
+                  <h3 class="mentor-name">Anna</h3>
+                  <p class="mentor-role">Frontend Developer<br>UX/UI Designer</p>
+                  <p class="mentor-rate"><span class="stars">★</span> 5.0 <span class="reviews">(22)</span></p>
+                </div>
+              </div>
+              <ul class="mentor-tags">
+                <li class="tag tag-js">JavaScript</li>
+                <li class="tag tag-html">HTML</li>
+                <li class="tag">Frontend</li>
+                <li class="tag">Angular</li>
+                <li class="tag tag-more">+4</li>
+              </ul>
+              <p class="mentor-bio">Cześć! Jestem doświadczonym mentorem IT z bogatym doświadczeniem w programowaniu i rozwoju oprogramowania. Specjalizuję się w językach takich jak Python, Java i JavaScript. Moja misja to nie tylko przek…</p>
+              <div class="mentor-footer">
+                <div class="mentor-price"><strong>90 Ptk</strong> /sesja</div>
+                <p class="mentor-free"><span aria-hidden="true">🎁</span> Pierwsza sesja darmowa</p>
+              </div>
+              <p class="mentor-term">Najbliższy termin: <strong>Wtorek, 25.10</strong></p>
+            </article>
+
+            <!-- Piotr -->
+            <article class="mentor-card">
+              <button class="fav-btn" aria-label="Dodaj do ulubionych">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.5-9.3-9C1.2 8 2.5 4.5 6 4.5c2 0 3.2 1.3 4 2.4.8-1.1 2-2.4 4-2.4 3.5 0 4.8 3.5 3.3 6.5C19 15.5 12 20 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mentor-top">
+                <img src="assets/img/avatar-piotr.webp" width="64" height="64" loading="lazy" alt="Piotr — Frontend Developer" class="mentor-avatar" />
+                <div>
+                  <h3 class="mentor-name">Piotr</h3>
+                  <p class="mentor-role">Frontend Developer<br>Backend Developer</p>
+                  <p class="mentor-rate"><span class="stars">★</span> 5.0 <span class="reviews">(21)</span></p>
+                </div>
+              </div>
+              <ul class="mentor-tags">
+                <li class="tag tag-js">JavaScript</li>
+                <li class="tag tag-html">HTML</li>
+                <li class="tag">Python</li>
+                <li class="tag">Django</li>
+                <li class="tag tag-more">+4</li>
+              </ul>
+              <p class="mentor-bio">Cześć! Jestem doświadczonym mentorem IT z bogatym doświadczeniem w programowaniu i rozwoju oprogramowania. Specjalizuję się w językach takich jak Python, Java i JavaScript. Moja misja to nie tylko przek…</p>
+              <div class="mentor-footer">
+                <div class="mentor-price"><strong>150 Ptk</strong> /sesja</div>
+                <p class="mentor-free"><span aria-hidden="true">🎁</span> Pierwsza sesja darmowa</p>
+              </div>
+              <p class="mentor-term">Najbliższy termin: <strong>Wtorek, 25.10</strong></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CO ZYSKUJESZ ======= -->
+    <section class="section benefits" id="korzysci" aria-labelledby="benefits-title">
+      <div class="container benefits-grid">
+        <div class="benefits-visual reveal">
+          <img src="assets/img/korzysci.webp" width="480" height="620" loading="lazy" alt="Uczniowie i uczennica korzystający z platformy TwójMentor.IT" class="benefits-photo" />
+        </div>
+        <div class="benefits-copy reveal">
+          <h2 id="benefits-title" class="section-title">Co z nami zyskujesz?</h2>
+          <ul class="benefits-list">
+            <li class="benefit-item">
+              <span class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 11v8H4v-8h3zm13 1.5c0-.8-.7-1.5-1.5-1.5H14l.7-3.4c.1-.6-.3-1.1-.9-1.1-.4 0-.7.2-.9.5L9 11v8h8.5c.7 0 1.3-.5 1.5-1.2l1-4.3z" stroke="#5b34d6" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3>Dostęp do najlepszych specjalistów</h3>
+                <p>Wszyscy Mentorzy są przez nas weryfikowani, dzięki czemu masz pewność, że masz dostęp do najlepszych specjalistów.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5b34d6" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="#5b34d6" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3>Poznasz branżę IT od środka</h3>
+                <p>Mentorzy mają praktyczne doświadczenie w branży IT, dzięki czemu posiadają wiedzę, której możesz nie znaleźć w Internecie.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#5b34d6" stroke-width="1.6"/><path d="M8 12l3 3 5-6" stroke="#5b34d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3>Wszystko w jednym miejscu</h3>
+                <p>Umówienie, płatność, dołączenie do sesji oraz chat z mentorem — wszystko to w jednym miejscu bez konieczności wykorzystywania innych pośrednich aplikacji.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FAQ ======= -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-head">
+          <h2 id="faq-title" class="section-title">Pytania i odpowiedzi</h2>
+          <a href="#faq" class="link-arrow">Zobacz wszystkie pytania i odpowiedzi
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Kto może zostać uczniem?<span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Uczniem TwójMentor.IT może zostać każdy, kto chce rozwijać się w branży IT — niezależnie od poziomu zaawansowania. Niezależnie od tego, czy dopiero zaczynasz, czy chcesz pogłębić konkretną technologię, znajdziesz mentora dopasowanego do swoich potrzeb.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Jak umówić sesję z mentorem?<span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Wystarczy wybrać mentora, kliknąć „Umów sesję”, wskazać dogodny termin w naszym systemie rezerwacji i potwierdzić spotkanie. Całość zajmuje kilka minut.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Czy TwójMentor.it jest darmowy?<span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Założenie konta i przeglądanie mentorów jest bezpłatne. Pierwsza sesja u wielu mentorów jest darmowa, a kolejne sesje rozliczane są w punktach według stawki ustalonej przez mentora.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Czy TwójMentor.it pośredniczy w rozliczeniach między uczniem a mentorem?<span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Tak. Wszystkie płatności, rezerwacje i rozliczenia odbywają się bezpiecznie w ramach platformy — bez konieczności korzystania z zewnętrznych aplikacji.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="section cta" id="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-deco" aria-hidden="true"></div>
+          <h2 id="cta-title">Dołącz do naszej społeczności</h2>
+          <p>Wybieraj spośród dziesiątek Mentorów i rozpocznij swoją przygodę z IT już dziś!</p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-ghost-light">Chcę zostać mentorem</a>
+            <a href="#" class="btn btn-primary">Zaloguj się</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo logo-footer" aria-label="TwójMentor.IT">
+          <svg class="logo-mark" width="30" height="30" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+            <rect width="34" height="34" rx="9" fill="url(#fgrad)"/>
+            <path d="M11 22V13.5c0-.6.6-1 1.1-.8l4.4 1.8 4.4-1.8c.5-.2 1.1.2 1.1.8V22" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="17" cy="11" r="2.4" fill="#fff"/>
+            <defs><linearGradient id="fgrad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#1a2b4a"/><stop offset="1" stop-color="#2a4d8f"/></linearGradient></defs>
+          </svg>
+          <span class="logo-text"><span class="logo-dark">Twój</span><span class="logo-blue">Mentor</span><span class="logo-dark">.IT</span></span>
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Regulaminy">
+        <h3>Regulaminy</h3>
+        <a href="#">Warunki korzystania</a>
+        <a href="#">Polityka prywatności</a>
+      </nav>
+      <nav class="footer-col" aria-label="Pomoc">
+        <h3>Pomoc</h3>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer-col">
+        <h3>Obserwuj nas</h3>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13 10h3l.5-3H13V5.5c0-.8.3-1.5 1.5-1.5H17V1.4C16.6 1.3 15.5 1.2 14.3 1.2 11.8 1.2 10 2.7 10 5.2V7H7v3h3v9h3v-9z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>TwójMentor.IT @2025</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
