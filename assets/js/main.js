@@ -97,16 +97,4 @@
     });
   });
 
-  /* ---- Hero search -> fill from tech chips ---- */
-  const input = document.getElementById("heroSearch");
-  document.querySelectorAll(".tech-chip").forEach((chip) => {
-    chip.addEventListener("click", () => {
-      if (input) {
-        input.value = chip.dataset.tech || chip.textContent.trim();
-        input.focus();
-      }
-    });
-  });
-  const form = document.querySelector(".hero-search");
-  if (form) form.addEventListener("submit", (e) => e.preventDefault());
 })();
