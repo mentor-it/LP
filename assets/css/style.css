@@ -92,7 +92,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 
 /* ===== Tech strip ===== */
 .tech-strip-wrap{
-  position:relative;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  position:relative;width:100%;margin:0 auto;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
 }
