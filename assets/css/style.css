@@ -94,8 +94,8 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
   overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
 }
-.tech-strip{display:flex;justify-content:center;gap:10px;padding:18px 24px;overflow-x:auto;scrollbar-width:none}
-.tech-strip::-webkit-scrollbar{display:none}
+.tech-strip{display:flex;gap:10px;padding:18px 0;width:max-content;animation:marquee 32s linear infinite}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .tech-chip{
   flex:none;font-size:13px;font-weight:600;color:var(--slate);
   background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;
