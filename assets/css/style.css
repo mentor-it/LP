@@ -129,7 +129,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 /* ===== How it works ===== */
 .how .section-title{margin-bottom:8px}
 .how-steps{display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);margin-top:48px}
-.how-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.how-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .how-row.reverse{direction:rtl}
 .how-row.reverse>*{direction:ltr}
 .step-num{font-size:clamp(34px,5vw,52px);font-weight:800;color:var(--purple);display:block;line-height:1}
