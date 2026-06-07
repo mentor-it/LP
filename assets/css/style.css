@@ -87,8 +87,6 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .hero-visual{position:relative;display:flex;justify-content:center}
 .hero-photo-wrap{position:relative;width:100%;max-width:560px}
 .hero-photo{width:100%;border-radius:22px;}
-.badge-star{position:absolute;right:6%;bottom:-6%;filter:drop-shadow(0 10px 24px rgba(91,52,214,.4));animation:floaty 4s ease-in-out infinite}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
 /* ===== Tech strip ===== */
 .tech-strip-wrap{
@@ -229,7 +227,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 /* ===== Scroll reveal ===== */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.badge-star{animation:none}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
 /* ===== Responsive ===== */
 @media (max-width:980px){
