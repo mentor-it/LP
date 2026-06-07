@@ -122,7 +122,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
 .feature-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .feature-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.feature-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;margin-bottom:16px}
+.feature-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:13px;background:var(--purple);margin-bottom:16px}
 .feature-card h3{font-size:19px;margin-bottom:10px}
 .feature-card p{font-size:15px}
 
