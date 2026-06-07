@@ -87,23 +87,26 @@
 
   /* ---- Modal: Zapisz się ---- */
   const modal = document.getElementById("signupModal");
-  const modalOpenBtn = document.getElementById("ctaSignupBtn");
   const modalCloseBtn = document.getElementById("modalClose");
-  if (modal && modalOpenBtn) {
+  const signupBtns = document.querySelectorAll(".js-signup-open");
+  if (modal && signupBtns.length) {
     const openModal = () => {
       modal.removeAttribute("hidden");
       document.body.style.overflow = "hidden";
       modalCloseBtn && modalCloseBtn.focus();
     };
-    const closeModal = () => {
+    const closeModal = (trigger) => {
       modal.setAttribute("hidden", "");
       document.body.style.overflow = "";
-      modalOpenBtn.focus();
+      if (trigger) trigger.focus();
     };
-    modalOpenBtn.addEventListener("click", (e) => { e.preventDefault(); openModal(); });
-    modalCloseBtn && modalCloseBtn.addEventListener("click", closeModal);
-    modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hasAttribute("hidden")) closeModal(); });
+    let lastTrigger = null;
+    signupBtns.forEach((btn) => {
+      btn.addEventListener("click", () => { lastTrigger = btn; openModal(); });
+    });
+    modalCloseBtn && modalCloseBtn.addEventListener("click", () => closeModal(lastTrigger));
+    modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(lastTrigger); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hasAttribute("hidden")) closeModal(lastTrigger); });
   }
 
   /* ---- FAQ: accordion (one open at a time) ---- */
