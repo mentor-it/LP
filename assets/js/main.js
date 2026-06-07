@@ -85,6 +85,27 @@
     update();
   }
 
+  /* ---- Modal: Zapisz się ---- */
+  const modal = document.getElementById("signupModal");
+  const modalOpenBtn = document.getElementById("ctaSignupBtn");
+  const modalCloseBtn = document.getElementById("modalClose");
+  if (modal && modalOpenBtn) {
+    const openModal = () => {
+      modal.removeAttribute("hidden");
+      document.body.style.overflow = "hidden";
+      modalCloseBtn && modalCloseBtn.focus();
+    };
+    const closeModal = () => {
+      modal.setAttribute("hidden", "");
+      document.body.style.overflow = "";
+      modalOpenBtn.focus();
+    };
+    modalOpenBtn.addEventListener("click", (e) => { e.preventDefault(); openModal(); });
+    modalCloseBtn && modalCloseBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hasAttribute("hidden")) closeModal(); });
+  }
+
   /* ---- FAQ: accordion (one open at a time) ---- */
   const faqItems = document.querySelectorAll(".faq-item");
   faqItems.forEach((item) => {
