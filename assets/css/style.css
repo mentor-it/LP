@@ -188,8 +188,9 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .faq-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
 .link-arrow{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--purple)}
 .link-arrow:hover{gap:10px}
-.faq-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.faq-list{display:flex;flex-direction:column}
 .faq-item{border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:none}
 .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-size:16px;font-weight:600;color:var(--ink)}
 .faq-item summary::-webkit-details-marker{display:none}
 .faq-chevron{flex:none;width:20px;height:20px;position:relative;transition:transform .3s var(--ease)}
