@@ -206,7 +206,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .cta-box{position:relative;overflow:hidden;text-align:center;border-radius:var(--radius-lg);padding:clamp(48px,7vw,80px) 24px;
   background:linear-gradient(135deg,#6f42e8 0%,#5028c4 100%);color:#fff;box-shadow:var(--shadow-lg)}
 .cta-box h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:14px}
-.cta-box p{color:rgba(255,255,255,.9);font-size:18px;max-width:46ch;margin:0 auto 28px}
+.cta-box p{color:rgba(255,255,255,.9);font-size:18px;max-width:none;margin:0 auto 28px}
 .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .cta-deco{position:absolute;inset:0;background:
   radial-gradient(circle at 12% 20%,rgba(255,255,255,.14),transparent 30%),
