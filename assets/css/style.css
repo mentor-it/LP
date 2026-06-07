@@ -176,6 +176,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .mentor-term strong{color:var(--ink)}
 
 /* ===== Benefits ===== */
+.benefits{background:var(--bg-soft)}
 .benefits-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
 .benefits-photo{width:100%;max-width:440px;border-radius:var(--radius-lg)}
 .benefits-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:32px}
