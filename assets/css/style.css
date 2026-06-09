@@ -225,7 +225,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .modal-box #mlb2-42301566 .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"]{position:static!important;opacity:1!important;z-index:auto!important;flex:none!important;width:16px!important;height:16px!important;margin:3px 0 0!important;cursor:pointer}
 
 /* ===== Footer ===== */
-.site-footer{background:var(--brand-dark);color:#cdd4e4;padding:56px 0 28px}
+.site-footer{background:#281359;color:#cdd4e4;padding:56px 0 28px}
 .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
 .logo-footer .logo-dark{color:#fff}
 .logo-footer .logo-blue{color:#6aa8e8}
