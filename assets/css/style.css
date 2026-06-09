@@ -221,6 +221,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 @keyframes modalIn{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
 .modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;color:var(--muted);background:var(--bg-soft);border-radius:50%;z-index:1;transition:background .2s,color .2s}
 .modal-close:hover{background:var(--line);color:var(--ink)}
+@media(max-width:480px){.modal-overlay{padding:16px}}
 .modal-box #mlb2-42301566 .ml-form-embedWrapper .ml-form-embedBody{padding-left:0!important;padding-right:0!important}
 .modal-box #mlb2-42301566 .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label{display:flex!important;align-items:flex-start!important;gap:8px!important;padding-left:0!important;cursor:pointer}
 .modal-box #mlb2-42301566 .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"]{position:static!important;opacity:1!important;z-index:auto!important;flex:none!important;width:16px!important;height:16px!important;margin:3px 0 0!important;cursor:pointer}
