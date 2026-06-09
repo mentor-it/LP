@@ -118,8 +118,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 /* ===== Mentoring features ===== */
 .mentoring{background:var(--bg-soft)}
 .feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
-.feature-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-.feature-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.feature-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
 .feature-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:13px;background:var(--purple);margin-bottom:16px}
 .feature-card h3{font-size:19px;margin-bottom:10px}
 .feature-card p{font-size:15px}
@@ -178,8 +177,7 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
 .benefits-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
 .benefits-photo{width:100%;max-width:440px;border-radius:var(--radius-lg)}
 .benefits-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:32px}
-.benefit-item{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-.benefit-item:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.benefit-item{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
 .benefit-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:13px;background:var(--purple);margin-bottom:16px}
 .benefit-item h3{font-size:19px;margin-bottom:10px}
 .benefit-item p{font-size:15px}
