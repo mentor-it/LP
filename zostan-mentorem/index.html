@@ -70,25 +70,6 @@
     }
 
 
-    /* === § 4 Benefits overrides === */
-    /* copy left, visual right */
-    .benefits .benefits-grid { grid-template-columns: 1.15fr .85fr; }
-    .benefits .benefits-visual { order: 2; display: flex; justify-content: flex-end; }
-    .benefits .benefits-copy  { order: 1; }
-    /* horizontal card: icon left, text right */
-    .benefit-item { display: flex; align-items: flex-start; gap: 20px; padding: 22px 26px; }
-    .benefit-item > div { flex: 1; }
-    .benefit-item h3 { font-size: 17px; margin-bottom: 8px; }
-    /* light purple circle icon */
-    .benefit-icon {
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      background: #ede9fc;
-      color: var(--purple);
-      margin-bottom: 0;
-      flex: none;
-    }
-
     /* === § 5 Payment — 3-column override === */
     .payment-grid { grid-template-columns: repeat(3, 1fr) }
 
@@ -288,10 +269,10 @@
       <div class="container benefits-grid">
         <div class="benefits-visual reveal">
           <img
-            src="../assets/img/benefits-visual.jpg"
-            width="480" height="674"
+            src="../assets/img/korzysci.webp"
+            width="480" height="620"
             loading="lazy"
-            alt="Mentor i uczeń podczas sesji mentoringowej — korzyści ze współpracy z TwójMentor.IT"
+            alt="Mentor pracujący z uczniami — korzyści ze współpracy z TwójMentor.IT"
             class="benefits-photo"
           />
         </div>
@@ -299,14 +280,11 @@
           <h2 id="benefits-mentor-title" class="section-title">Co z nami zyskujesz?</h2>
           <ul class="benefits-list">
             <li class="benefit-item">
-              <span class="benefit-icon" aria-hidden="true">
-                <svg width="26" height="26" viewBox="0 0 38 38" fill="none">
-                  <path d="M28.5009 11.337C28.4059 11.3212 28.2951 11.3212 28.2001 11.337C26.0151 11.2578 24.2734 9.46866 24.2734 7.252C24.2734 4.98783 26.0943 3.16699 28.3584 3.16699C30.6226 3.16699 32.4434 5.00366 32.4434 7.252C32.4276 9.46866 30.6859 11.2578 28.5009 11.337Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26.8717 22.8639C29.0409 23.2281 31.4317 22.8481 33.1101 21.7239C35.3426 20.2356 35.3426 17.7972 33.1101 16.3089C31.4159 15.1847 28.9934 14.8047 26.8242 15.1847" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.45422 11.337C9.54922 11.3212 9.66005 11.3212 9.75505 11.337C11.9401 11.2578 13.6817 9.46866 13.6817 7.252C13.6817 4.98783 11.8609 3.16699 9.59672 3.16699C7.33256 3.16699 5.51172 5.00366 5.51172 7.252C5.52755 9.46866 7.26922 11.2578 9.45422 11.337Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11.0846 22.8639C8.91541 23.2281 6.52458 22.8481 4.84625 21.7239C2.61375 20.2356 2.61375 17.7972 4.84625 16.3089C6.54042 15.1847 8.96291 14.8047 11.1321 15.1847" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19.0009 23.1641C18.9059 23.1483 18.7951 23.1483 18.7001 23.1641C16.5151 23.085 14.7734 21.2958 14.7734 19.0791C14.7734 16.815 16.5943 14.9941 18.8584 14.9941C21.1226 14.9941 22.9434 16.8308 22.9434 19.0791C22.9276 21.2958 21.1859 23.1008 19.0009 23.1641Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M14.3931 28.1513C12.1606 29.6397 12.1606 32.078 14.3931 33.5663C16.9265 35.2605 21.0748 35.2605 23.6081 33.5663C25.8406 32.078 25.8406 29.6397 23.6081 28.1513C21.0906 26.473 16.9265 26.473 14.3931 28.1513Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <span class="benefit-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="#fff" stroke-width="2"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
               <div>
@@ -315,11 +293,9 @@
               </div>
             </li>
             <li class="benefit-item">
-              <span class="benefit-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
-                  <path d="M31.6654 14.9997C31.6654 17.4163 30.9487 19.633 29.7154 21.483C27.9154 24.1497 25.0654 26.033 21.7487 26.5163C21.182 26.6163 20.5987 26.6663 19.9987 26.6663C19.3987 26.6663 18.8154 26.6163 18.2487 26.5163C14.932 26.033 12.082 24.1497 10.282 21.483C9.0487 19.633 8.33203 17.4163 8.33203 14.9997C8.33203 8.54967 13.5487 3.33301 19.9987 3.33301C26.4487 3.33301 31.6654 8.54967 31.6654 14.9997Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35.4184 30.7833L32.6684 31.4333C32.0518 31.5833 31.5684 32.05 31.4351 32.6667L30.8518 35.1167C30.5351 36.45 28.8351 36.85 27.9518 35.8L20.0018 26.6667L12.0518 35.8167C11.1684 36.8667 9.46843 36.4667 9.15176 35.1333L8.56843 32.6833C8.41843 32.0667 7.93509 31.5833 7.33509 31.45L4.58509 30.8C3.31843 30.5 2.86843 28.9167 3.78509 28L10.2851 21.5C12.0851 24.1667 14.9351 26.05 18.2518 26.5334C18.8184 26.6334 19.4018 26.6834 20.0018 26.6834C20.6018 26.6834 21.1851 26.6334 21.7518 26.5334C25.0684 26.05 27.9184 24.1667 29.7184 21.5L36.2184 28C37.1351 28.9 36.6851 30.4833 35.4184 30.7833Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20.9673 9.96699L21.9506 11.9336C22.0839 12.2003 22.4339 12.467 22.7506 12.517L24.5339 12.817C25.6673 13.0003 25.9339 13.8337 25.1173 14.6503L23.7339 16.0336C23.5006 16.267 23.3673 16.717 23.4506 17.0503L23.8506 18.767C24.1673 20.117 23.4506 20.6503 22.2506 19.9336L20.5839 18.9503C20.2839 18.767 19.7839 18.767 19.4839 18.9503L17.8173 19.9336C16.6173 20.6336 15.9006 20.117 16.2173 18.767L16.6173 17.0503C16.6839 16.7337 16.5673 16.267 16.3339 16.0336L14.9506 14.6503C14.1339 13.8337 14.4006 13.017 15.5339 12.817L17.3173 12.517C17.6173 12.467 17.9673 12.2003 18.1006 11.9336L19.0839 9.96699C19.5673 8.90033 20.4339 8.90033 20.9673 9.96699Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <span class="benefit-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
               <div>
@@ -328,11 +304,10 @@
               </div>
             </li>
             <li class="benefit-item">
-              <span class="benefit-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
-                  <path d="M36.6654 20.0003V28.3337C36.6654 33.3337 33.332 36.667 28.332 36.667H11.6654C6.66536 36.667 3.33203 33.3337 3.33203 28.3337V20.0003C3.33203 15.467 6.06536 12.3003 10.3154 11.767C10.7487 11.7003 11.1987 11.667 11.6654 11.667H28.332C28.7654 11.667 29.182 11.6836 29.582 11.7503C33.882 12.2503 36.6654 15.4337 36.6654 20.0003Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M29.587 11.7497C29.187 11.683 28.7703 11.6664 28.337 11.6664H11.6703C11.2036 11.6664 10.7536 11.6997 10.3203 11.7664C10.5536 11.2997 10.887 10.8664 11.287 10.4664L16.7036 5.03301C18.987 2.76634 22.687 2.76634 24.9703 5.03301L27.887 7.98304C28.9536 9.03304 29.5203 10.3663 29.587 11.7497Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M36.6654 20.833H31.6654C29.832 20.833 28.332 22.333 28.332 24.1663C28.332 25.9997 29.832 27.4997 31.6654 27.4997H36.6654" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <span class="benefit-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <line x1="12" y1="1" x2="12" y2="23" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
               <div>
