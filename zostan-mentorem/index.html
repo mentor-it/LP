@@ -83,22 +83,32 @@
     .feature-icon { background: var(--brand-blue) }
     .payment-grid { grid-template-columns: repeat(3, 1fr) }
 
-    /* === § 6 Referral section === */
+    /* === § 6 Referral section — two-tone split === */
     .referral {
-      background: linear-gradient(135deg, #6f42e8 0%, var(--purple-600) 100%);
+      background: #f5f7fa; /* right half (photo side) */
       position: relative;
       overflow: hidden;
     }
     .referral::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 8% 15%, rgba(255,255,255,.13), transparent 28%),
-        radial-gradient(circle at 90% 85%, rgba(255,255,255,.10), transparent 30%);
+      inset: 0 50% 0 0; /* covers left half (text side) */
+      background: #1a3460;
       pointer-events: none;
     }
     .referral .container { position: relative; z-index: 1 }
+    /* % badge on photo */
+    .referral-percent-badge {
+      position: absolute;
+      top: -14px; left: -14px;
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: #22c55e;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 18px; font-weight: 800;
+      box-shadow: 0 4px 14px rgba(34,197,94,.35);
+      z-index: 2;
+    }
     .referral-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -378,6 +388,7 @@
             <p>Zaproś znajomych do rejestracji za pomocą Twojego unikalnego linku lub kodu rejestracyjnego. Za każdego użytkownika, który zarejestruje się z Twojego polecenia, otrzymasz równowartość 5% kwoty jego pierwszej transakcji na platformie.</p>
           </div>
           <div class="referral-visual reveal">
+            <div class="referral-percent-badge" aria-hidden="true">%</div>
             <img
               src="../assets/img/korzysci.png"
               width="520" height="560"
