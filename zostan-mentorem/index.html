@@ -133,6 +133,18 @@
     /* === § 8 CTA box — blue gradient === */
     .cta-box { background: linear-gradient(135deg, #2f7fd0 0%, #1a5fa8 100%) }
 
+    /* === Wide screens (>1440px) — constrain full-bleed sections to standard max-width === */
+    @media (min-width: 1440px) {
+      .mentor-intro-grid {
+        max-width: 1180px;
+        margin-inline: auto;
+        border-radius: 32px;
+        overflow: hidden;
+      }
+      .referral .container { max-width: 1180px }
+      .referral-grid { border-radius: 32px; overflow: hidden; }
+    }
+
     /* === Responsive === */
     @media (max-width: 980px) {
       .hero .hero-grid { min-height: 0; align-items: center }
