@@ -13,6 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <style>
+    /* === § 0 Navbar — blue variant === */
+    .site-header--mentor .btn-primary { background: var(--brand-blue); box-shadow: 0 8px 20px rgba(47,127,208,.28) }
+    .site-header--mentor .btn-primary:hover { background: #2470bb; box-shadow: 0 12px 28px rgba(47,127,208,.36) }
+    .site-header--mentor .btn-ghost { color: var(--brand-blue); border-color: #b8d9f4 }
+    .site-header--mentor .btn-ghost:hover { background: #f0f7ff }
+
     /* === § 1 Hero overrides (mentor page only) === */
     .hero { background: radial-gradient(120% 90% at 85% 0%, #eaf4ff 0%, #fafdff 45%, #fff 100%); padding-bottom: 96px }
 
@@ -143,7 +149,7 @@
   <a class="skip-link" href="#main">Przejdź do treści</a>
 
   <!-- ======= HEADER ======= -->
-  <header class="site-header" id="siteHeader">
+  <header class="site-header site-header--mentor" id="siteHeader">
     <div class="container header-inner">
       <a href="../" class="logo" aria-label="TwójMentor.IT — strona główna">
         <img src="../assets/img/logo.webp" width="218" height="53" alt="TwójMentor.IT" class="logo-img" />
