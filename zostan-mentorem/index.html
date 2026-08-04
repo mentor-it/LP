@@ -13,6 +13,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <style>
+    /* === § 1 Hero overrides (mentor page only) === */
+    .hero-mentor-visual { position: relative }
+    .hero-mentor-visual::before {
+      content: "";
+      position: absolute;
+      inset: -24px -16px 0 -16px;
+      background-image: radial-gradient(circle, rgba(91,52,214,.07) 1.5px, transparent 1.5px);
+      background-size: 26px 26px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-mentor-visual .hero-photo-wrap { position: relative; z-index: 1 }
+    .hero-mentor-visual .hero-photo { border-radius: 0; box-shadow: none; background: transparent }
+
+    .btn-blue {
+      background: var(--brand-blue);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(47,127,208,.28);
+    }
+    .btn-blue:hover {
+      background: #2470bb;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(47,127,208,.36);
+    }
+
     /* === § 2 Split panel "Dziel się doświadczeniem" === */
     .mentor-intro { padding: 0 }
     .mentor-intro-grid {
@@ -145,14 +170,14 @@
         <div class="hero-copy">
           <h1 class="hero-title">Dołącz do naszej społeczności</h1>
           <p class="hero-sub">Dziel się swoją pasją i buduj z nami markę jako mentor!</p>
-          <button type="button" class="btn btn-primary js-signup-open">Zarejestruj się jako mentor</button>
+          <button type="button" class="btn btn-blue js-signup-open">Zarejestruj się jako mentor</button>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual hero-mentor-visual">
           <div class="hero-photo-wrap">
             <img
-              src="../assets/img/hero-mentorzy.webp"
+              src="../assets/img/hero-mentor.png"
               width="560" height="420"
-              alt="Mentorzy TwójMentor.IT podczas sesji online z uczniami"
+              alt="Sesja mentoringowa online — widok video-rozmowy z ikonami technologii"
               class="hero-photo"
             />
           </div>
