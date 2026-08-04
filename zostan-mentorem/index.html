@@ -18,6 +18,7 @@
     .mentor-intro-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      height: 685px;
     }
     .mentor-intro-photo { overflow: hidden; position: relative }
     .mentor-intro-photo img {
@@ -104,7 +105,7 @@
 
     /* === Responsive === */
     @media (max-width: 980px) {
-      .mentor-intro-grid { grid-template-columns: 1fr }
+      .mentor-intro-grid { grid-template-columns: 1fr; height: auto }
       .mentor-intro-photo { min-height: 320px; max-height: 420px }
       .payment-grid { grid-template-columns: 1fr 1fr }
       .referral-grid { grid-template-columns: 1fr; gap: 36px }
