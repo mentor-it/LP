@@ -93,7 +93,7 @@
 
     /* === § 6 Referral section — two-tone (tła na kolumnach, jak mentor-intro) === */
     .referral { position: relative; overflow: hidden; padding: 0; background: transparent; }
-    .referral .container { position: relative; z-index: 1; max-width: var(--maxw); padding: 0 }
+    .referral .container { position: relative; z-index: 1; max-width: 100%; padding: 0 }
     .referral-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -141,6 +141,7 @@
         border-radius: 32px;
         overflow: hidden;
       }
+      .referral .container { max-width: 1180px }
       .referral-grid { border-radius: 32px; overflow: hidden; }
     }
 
