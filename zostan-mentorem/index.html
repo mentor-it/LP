@@ -15,8 +15,6 @@
   <style>
     /* === § 1 Hero overrides (mentor page only) === */
     .hero { background: radial-gradient(120% 90% at 85% 0%, #eaf4ff 0%, #fafdff 45%, #fff 100%); padding-bottom: 96px }
-    .hero .hero-grid { align-items: start; }
-    .hero .hero-copy { padding-top: 52px; }
 
     .hero-mentor-visual { position: relative }
     .hero-mentor-visual::before {
@@ -132,11 +130,6 @@
     }
     .referral-badge-amount { color: var(--purple); margin-left: 4px }
 
-    /* === § 3 How section — decorative background === */
-    .how { position: relative; overflow: hidden; }
-    .how-deco-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
-    .how > .container { position: relative; z-index: 1; }
-
     /* === Responsive === */
     @media (max-width: 980px) {
       .mentor-intro-grid { grid-template-columns: 1fr; height: auto }
@@ -215,46 +208,6 @@
 
     <!-- ======= § 3 JAK ZOSTAĆ MENTOREM? ======= -->
     <section class="section how" id="jak-zostac-mentorem" aria-labelledby="how-mentor-title">
-      <svg aria-hidden="true" class="how-deco-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" preserveAspectRatio="xMidYMid slice">
-        <!-- diamonds -->
-        <path d="M62 190 L70 198 L62 206 L54 198Z" fill="#5b34d6" opacity=".07"/>
-        <path d="M1148 110 L1156 118 L1148 126 L1140 118Z" fill="#2f7fd0" opacity=".07"/>
-        <path d="M44 620 L52 628 L44 636 L36 628Z" fill="#5b34d6" opacity=".06"/>
-        <path d="M1155 560 L1163 568 L1155 576 L1147 568Z" fill="#2f7fd0" opacity=".06"/>
-        <path d="M590 18 L598 26 L590 34 L582 26Z" fill="#5b34d6" opacity=".05"/>
-        <path d="M620 1360 L628 1368 L620 1376 L612 1368Z" fill="#2f7fd0" opacity=".05"/>
-        <path d="M78 970 L86 978 L78 986 L70 978Z" fill="#5b34d6" opacity=".06"/>
-        <path d="M1130 920 L1138 928 L1130 936 L1122 928Z" fill="#2f7fd0" opacity=".06"/>
-        <path d="M310 1340 L318 1348 L310 1356 L302 1348Z" fill="#5b34d6" opacity=".05"/>
-        <path d="M900 1320 L908 1328 L900 1336 L892 1328Z" fill="#2f7fd0" opacity=".05"/>
-        <!-- plus marks -->
-        <path d="M148 360 h8 M152 356 v8" stroke="#5b34d6" stroke-width="1.5" stroke-linecap="round" opacity=".11"/>
-        <path d="M1062 330 h8 M1066 326 v8" stroke="#2f7fd0" stroke-width="1.5" stroke-linecap="round" opacity=".11"/>
-        <path d="M96 780 h8 M100 776 v8" stroke="#5b34d6" stroke-width="1.5" stroke-linecap="round" opacity=".10"/>
-        <path d="M1100 1080 h8 M1104 1076 v8" stroke="#2f7fd0" stroke-width="1.5" stroke-linecap="round" opacity=".10"/>
-        <path d="M480 1350 h8 M484 1346 v8" stroke="#5b34d6" stroke-width="1.5" stroke-linecap="round" opacity=".08"/>
-        <!-- dashed diagonal lines -->
-        <line x1="116" y1="470" x2="148" y2="502" stroke="#5b34d6" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".09"/>
-        <line x1="1070" y1="180" x2="1102" y2="212" stroke="#2f7fd0" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".09"/>
-        <line x1="80" y1="830" x2="112" y2="862" stroke="#5b34d6" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".08"/>
-        <line x1="1110" y1="720" x2="1142" y2="752" stroke="#2f7fd0" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".08"/>
-        <line x1="60" y1="1160" x2="92" y2="1192" stroke="#5b34d6" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".07"/>
-        <line x1="1085" y1="1250" x2="1117" y2="1282" stroke="#2f7fd0" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round" opacity=".07"/>
-        <!-- small circles -->
-        <circle cx="190" cy="140" r="3" fill="#5b34d6" opacity=".11"/>
-        <circle cx="1025" cy="260" r="3" fill="#2f7fd0" opacity=".11"/>
-        <circle cx="98"  cy="390" r="2.5" fill="#5b34d6" opacity=".09"/>
-        <circle cx="1140" cy="480" r="2.5" fill="#2f7fd0" opacity=".09"/>
-        <circle cx="600" cy="700" r="3" fill="#5b34d6" opacity=".07"/>
-        <circle cx="1130" cy="860" r="2.5" fill="#2f7fd0" opacity=".08"/>
-        <circle cx="55"  cy="1050" r="3" fill="#5b34d6" opacity=".08"/>
-        <circle cx="750" cy="1380" r="2.5" fill="#2f7fd0" opacity=".06"/>
-        <!-- small chevrons / arrows -->
-        <path d="M1050 440 l9-6-4 9" fill="none" stroke="#5b34d6" stroke-width="1.5" stroke-linejoin="round" opacity=".10"/>
-        <path d="M138 670 l9-6-4 9" fill="none" stroke="#2f7fd0" stroke-width="1.5" stroke-linejoin="round" opacity=".10"/>
-        <path d="M1090 1150 l9-6-4 9" fill="none" stroke="#5b34d6" stroke-width="1.5" stroke-linejoin="round" opacity=".09"/>
-        <path d="M110 1260 l9-6-4 9" fill="none" stroke="#2f7fd0" stroke-width="1.5" stroke-linejoin="round" opacity=".09"/>
-      </svg>
       <div class="container">
         <h2 id="how-mentor-title" class="section-title">Jak zostać mentorem?</h2>
         <div class="how-steps">
@@ -267,10 +220,10 @@
             </div>
             <div class="how-media">
               <img
-                src="../assets/img/step-formularz.jpg"
-                width="700" height="560"
+                src="../assets/img/Wyszukaj.png"
+                width="600" height="434"
                 loading="lazy"
-                alt="Formularz rejestracyjny mentora w aplikacji TwójMentor.IT"
+                alt="Ekran rejestracji i tworzenia profilu mentora w aplikacji TwójMentor.IT"
               />
             </div>
           </div>
@@ -283,10 +236,10 @@
             </div>
             <div class="how-media">
               <img
-                src="../assets/img/step-profil.jpg"
-                width="700" height="810"
+                src="../assets/img/Umow_sie.png"
+                width="600" height="435"
                 loading="lazy"
-                alt="Panel mentora z ustawieniami widoczności profilu i harmonogramem sesji"
+                alt="Panel ustawień mentora z wyborem dostępności i stawki godzinowej"
               />
             </div>
           </div>
@@ -299,10 +252,10 @@
             </div>
             <div class="how-media">
               <img
-                src="../assets/img/step-sesja.jpg"
-                width="700" height="746"
+                src="../assets/img/Zdobywaj_wiedze.png"
+                width="600" height="434"
                 loading="lazy"
-                alt="Kobieta prowadząca wideorozmowę mentoringową online"
+                alt="Wideorozmowa mentora z uczniem podczas sesji online na TwójMentor.IT"
               />
             </div>
           </div>
